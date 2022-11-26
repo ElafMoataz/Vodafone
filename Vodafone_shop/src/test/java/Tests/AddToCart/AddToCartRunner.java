@@ -1,5 +1,6 @@
 package Tests.AddToCart;
 
+import com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -8,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -20,6 +22,8 @@ import java.util.concurrent.TimeUnit;
                 features={"./src/test/java/Tests/AddToCart"},
                 glue={"Tests/AddToCart"}
         )
+@Listeners({ExtentITestListenerClassAdapter.class})
+
 public class AddToCartRunner extends AbstractTestNGCucumberTests {
         public static WebDriver browser;
 
