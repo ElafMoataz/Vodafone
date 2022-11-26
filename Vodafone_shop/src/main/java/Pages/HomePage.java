@@ -2,12 +2,9 @@ package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
-import java.util.List;
 
 public class HomePage extends BasePage {
-    private static final int waitInterval = 3;
 
     public HomePage(WebDriver desiredBrowser) {
         super(desiredBrowser);
