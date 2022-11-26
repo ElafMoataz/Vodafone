@@ -5,7 +5,15 @@
 Description
 
   This repository contains a list of ideas/bullet points for testing YallaKora mobile application with prioritization, bugs found on YallaKora mobile application, Vodafone shop FE automation add to cart tests, Nationalize API list of testcases and BE automation tests.
- 
+
+To Run Vodafone Shop FE Automation Use:
+
+    AddToCartRunner.java
+    
+To Run Nationalize API BE Automation Use:
+
+    ResponseActionsTests.java
+
 YallaKora Testing plan
 
   Introduction:
