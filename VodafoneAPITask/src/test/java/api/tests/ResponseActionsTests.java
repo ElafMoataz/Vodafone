@@ -27,9 +27,10 @@ public class ResponseActionsTests extends BaseTest{
     }
     @Test
     public void validateThatNameReturnedInBEReponseMatchesTheNameEnteredInTheRequestParameters() {
-        sendNationalizeGetRequest("Elaf");
+        String name = "Elaf";
+        sendNationalizeGetRequest(name);
         Assert.assertEquals(responseStatusCode(),200);
-        Assert.assertEquals(responseJsonBody().getName(),"Elaf");
+        Assert.assertEquals(responseJsonBody().getName(),name);
     }
     @Test
     public void validateThatEveryProbabilityKeyInBEResponseDoesNotExceed1(){
