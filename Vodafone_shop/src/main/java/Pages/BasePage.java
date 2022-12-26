@@ -14,6 +14,7 @@ public class BasePage {
         browser = desiredBrowser;
     }
 
+
     public void waitElement(By element, int time){
         WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(time));
         wait.until(ExpectedConditions.visibilityOfElementLocated(element));
